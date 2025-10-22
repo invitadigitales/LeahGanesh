@@ -593,6 +593,14 @@ document.querySelectorAll('.modal').forEach(function(modal) {
 
 
 
+
+
+
+
+
+
+
+
 class UrlParams {  constructor() { this.params = new URLSearchParams(window.location.search); }  get(key) { return this.params.get(key); } }
 const url = new UrlParams();
 var invitado = url.get('invitado');
@@ -604,7 +612,7 @@ if(invitado!=null){
 
  
 
-    var link = `http://invitadigital.mywebcommunity.org/show.php?cliente=4&familia=${invitado}&r=${Math.random()}`;
+    var link = `http://invitadigital.mywebcommunity.org/show.php?cliente_id=4&familia=${invitado}&r=${Math.random()}`;
     function procesarRespuesta(data) {
 
         var data = JSON.parse(data);
@@ -908,16 +916,12 @@ function compartirWat(familia){
 }
 
 
-
-
 function toTitleCase(str) {
     return str
         .split(' ')
         .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
         .join(' ');
 }
-
-
 
 
 
