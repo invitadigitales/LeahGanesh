@@ -897,7 +897,7 @@ function compartirWat(familia){
     
     // Codificar la familia para evitar problemas con espacios
     const familiaCodeada = encodeURIComponent(familia);
-    const mensaje = "https://invitadigitales.github.io/MariaJose/?invitado=" + familiaCodeada;
+    const mensaje = "https://invitadigitales.github.io/LeahGanesh/?invitado=" + familiaCodeada;
     const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(mensaje)}`;
     
     boton.addEventListener('click', function() {
@@ -915,6 +915,8 @@ function toTitleCase(str) {
         .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
         .join(' ');
 }
+
+
 
 
 
