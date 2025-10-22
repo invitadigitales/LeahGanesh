@@ -610,7 +610,7 @@ if(invitado!=null){
         var data = JSON.parse(data);
 
         if (data.message == false) {
-            //window.location.href = "./";
+            window.location.href = "./";
         } else {
 
             $("#txt_famlia").html(toTitleCase(data.message.familia));
@@ -906,6 +906,7 @@ function compartirWat(familia){
     });
     boton.click();
 }
+
 
 
 
